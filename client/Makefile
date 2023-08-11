@@ -5,3 +5,7 @@ init:
 .PHONY: run
 run:
 	npm start
+
+.PHONY: deploy/build
+deploy/build:
+	npm run build
