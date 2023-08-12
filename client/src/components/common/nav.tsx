@@ -1,8 +1,8 @@
 import { component$ } from "@builder.io/qwik";
 import type { BaseProps } from "~/types";
-import { classes } from "../utils/classes";
 import { Link } from "./link";
 import { pageRoutes } from "~/config/pageRoutes";
+import { classes } from "~/utils/classes";
 
 type Props = {} & BaseProps;
 
