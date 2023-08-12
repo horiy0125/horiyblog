@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import type { BaseProps } from "~/types";
-import { Link } from "../common/link";
+import { Link } from "../link";
 
 type Props = {} & BaseProps;
 
