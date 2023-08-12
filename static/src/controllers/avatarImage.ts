@@ -1,6 +1,19 @@
 import { RouterContext, Status } from "../deps.ts";
 
 export const AvatarImageController = () => {
+  const me = async (ctx: RouterContext<"/avatar/me">) => {
+    ctx.response.status = Status.OK;
+    ctx.response.type = "image/jpeg";
+
+    const path = new URL(
+      "../../images/avatar/IMG_5699.JPG",
+      import.meta.url,
+    );
+    const file = await Deno.readFile(path);
+
+    ctx.response.body = file;
+  };
+
   const oretan = async (ctx: RouterContext<"/avatar/oretan">) => {
     ctx.response.status = Status.OK;
     ctx.response.type = "image/jpeg";
@@ -27,5 +40,5 @@ export const AvatarImageController = () => {
     ctx.response.body = file;
   };
 
-  return { oretan, cocotan };
+  return { me, oretan, cocotan };
 };
