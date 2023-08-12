@@ -1,7 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import type { BaseProps } from "~/types";
 import { Link } from "../common/link";
-import { Link as HamsterLink } from "../hamster/link";
 
 type Props = {} & BaseProps;
 
@@ -78,9 +77,7 @@ export const ProfileSection = component$((props: Props) => {
               </ul>
             </nav>
 
-            <h5>
-              <HamsterLink />
-            </h5>
+            <h5>🐹</h5>
           </div>
 
           <img
