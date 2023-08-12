@@ -19,8 +19,8 @@ export const ProfileSection = component$((props: Props) => {
             <h4>@horiy0125</h4>
           </hgroup>
           <img
-            src="https://amam.deno.dev/avatar/oretan"
-            width={1200}
+            src="https://static.horiy.dev/avatar/me"
+            width={1600}
             height={1200}
           />
         </div>
