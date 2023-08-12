@@ -13,7 +13,17 @@ export const ProfileSection = component$((props: Props) => {
       </div>
 
       <article>
-        <h3>堀内 凱登 / Kaito Horiuchi</h3>
+        <div class="grid">
+          <hgroup>
+            <h3>堀内 凱登（Kaito Horiuchi）</h3>
+            <h4>@horiy0125</h4>
+          </hgroup>
+          <img
+            src="https://amam.deno.dev/avatar/oretan"
+            width={1200}
+            height={1200}
+          />
+        </div>
 
         <aside>
           <nav>

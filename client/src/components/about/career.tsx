@@ -26,7 +26,7 @@ export const CareerSection = component$((props: Props) => {
         </hgroup>
 
         <p>
-          Vue.js, DjangoでのFA（Factory Automation）Webシステム開発、Tensorflow,
+          Vue.js, DjangoでのFA（Factory Automation）Webシステム開発、TensorFlow,
           Kerasでの同システム向けCNNモデル開発、React.jsでの自社プロダクト開発、Gatsby.jsでの自社HP・LP開発に従事。
         </p>
 
