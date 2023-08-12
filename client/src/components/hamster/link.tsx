@@ -12,7 +12,12 @@ export const Link = component$((props: Props) => {
   const href = urls[Math.floor(Math.random() * urls.length)];
 
   return (
-    <a href={href} class={props.class}>
+    <a
+      href={href}
+      rel="noopener noreferrer"
+      target="_blank"
+      class={props.class}
+    >
       🐹
     </a>
   );
