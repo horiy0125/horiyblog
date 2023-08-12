@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import type { BaseProps } from "~/types";
+import { Link } from "../common/link";
 
 type Props = {} & BaseProps;
 
@@ -81,9 +82,13 @@ export const CareerSection = component$((props: Props) => {
         </p>
         <p>
           詳しくは
-          <a href="https://www.k-hori.com/blog/posts/311ze4r8ztg3">
+          <Link
+            isExternalLink
+            openInNewTab
+            href="https://www.k-hori.com/blog/posts/311ze4r8ztg3"
+          >
             ブログ記事
-          </a>
+          </Link>
           を参照。
         </p>
       </article>
@@ -99,7 +104,13 @@ export const CareerSection = component$((props: Props) => {
 
         <p>
           詳しくは
-          <a href="https://www.k-hori.com/blog/posts/lsk8k8gpz">ブログ記事</a>
+          <Link
+            isExternalLink
+            openInNewTab
+            href="https://www.k-hori.com/blog/posts/lsk8k8gpz"
+          >
+            ブログ記事
+          </Link>
           を参照。
         </p>
       </article>
@@ -138,7 +149,7 @@ export const CareerSection = component$((props: Props) => {
 
         <hgroup>
           <h4>株式会社CARTA HOLDINGS</h4>
-          <h5>fluct アドプラットフォーム事業本部 開発本部</h5>
+          <h5>fluct アドプラットフォーム事業本部</h5>
           <h6>エンジニア（内定者アルバイト）</h6>
         </hgroup>
       </article>
