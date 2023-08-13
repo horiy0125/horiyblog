@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import type { BaseProps } from "~/types";
-import { Link } from "../link";
+import { ExternalLink } from "../common/external-link";
 
 type Props = {} & BaseProps;
 
@@ -82,13 +82,9 @@ export const CareerSection = component$((props: Props) => {
         </p>
         <p>
           詳しくは
-          <Link
-            isExternalLink
-            openInNewTab
-            href="https://www.k-hori.com/blog/posts/311ze4r8ztg3"
-          >
+          <ExternalLink href="https://www.k-hori.com/blog/posts/311ze4r8ztg3">
             ブログ記事
-          </Link>
+          </ExternalLink>
           を参照。
         </p>
       </article>
@@ -104,13 +100,9 @@ export const CareerSection = component$((props: Props) => {
 
         <p>
           詳しくは
-          <Link
-            isExternalLink
-            openInNewTab
-            href="https://www.k-hori.com/blog/posts/lsk8k8gpz"
-          >
+          <ExternalLink href="https://www.k-hori.com/blog/posts/lsk8k8gpz">
             ブログ記事
-          </Link>
+          </ExternalLink>
           を参照。
         </p>
       </article>

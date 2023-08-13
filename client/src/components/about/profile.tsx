@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import type { BaseProps } from "~/types";
-import { Link } from "../link";
+import { ExternalLink } from "../common/external-link";
 
 type Props = {} & BaseProps;
 
@@ -23,56 +23,40 @@ export const ProfileSection = component$((props: Props) => {
             <nav>
               <ul>
                 <li>
-                  <Link
-                    isExternalLink
-                    openInNewTab
-                    href="https://github.com/horiy0125"
-                  >
+                  <ExternalLink href="https://github.com/horiy0125">
                     <img
                       src="https://static.horiy.dev/favicon/github"
                       width={32}
                       height={32}
                     />
-                  </Link>
+                  </ExternalLink>
                 </li>
                 <li>
-                  <Link
-                    isExternalLink
-                    openInNewTab
-                    href="https://twitter.com/horiy0125"
-                  >
+                  <ExternalLink href="https://twitter.com/horiy0125">
                     <img
                       src="https://static.horiy.dev/favicon/twitter"
                       width={32}
                       height={32}
                     />
-                  </Link>
+                  </ExternalLink>
                 </li>
                 <li>
-                  <Link
-                    isExternalLink
-                    openInNewTab
-                    href="https://qiita.com/horiy0125"
-                  >
+                  <ExternalLink href="https://qiita.com/horiy0125">
                     <img
                       src="https://static.horiy.dev/favicon/qiita"
                       width={32}
                       height={32}
                     />
-                  </Link>
+                  </ExternalLink>
                 </li>
                 <li>
-                  <Link
-                    isExternalLink
-                    openInNewTab
-                    href="https://note.com/horiy0125"
-                  >
+                  <ExternalLink href="https://note.com/horiy0125">
                     <img
                       src="https://static.horiy.dev/favicon/note"
                       width={32}
                       height={32}
                     />
-                  </Link>
+                  </ExternalLink>
                 </li>
               </ul>
             </nav>
