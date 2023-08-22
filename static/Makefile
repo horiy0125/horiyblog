@@ -9,3 +9,7 @@ lint:
 .PHONY: fmt
 fmt:
 	deno fmt
+
+.PHONY: check
+check:
+	deno check

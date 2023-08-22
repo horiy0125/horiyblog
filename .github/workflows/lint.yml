@@ -21,6 +21,16 @@ jobs:
       - uses: actions/setup-node@v3
       - run: make -C client init ci/fmt ci/lint
 
+  check_static:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+      - run: make -C static check
+
   lint_static:
     runs-on: ubuntu-latest
 
