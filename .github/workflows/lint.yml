@@ -5,7 +5,15 @@ on:
     workflow_dispatch:
 
 jobs:
-  lint:
+  build_client:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - run: make -C client deploy/build
+
+  lint_client:
     runs-on: ubuntu-latest
 
     steps:
