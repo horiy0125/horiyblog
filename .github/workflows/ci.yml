@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-      - run: make -C client deploy/build
+      - run: make -C client init deploy/build
 
   lint_client:
     runs-on: ubuntu-latest
