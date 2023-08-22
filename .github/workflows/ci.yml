@@ -21,7 +21,7 @@ jobs:
       - uses: actions/setup-node@v3
       - run: make -C client init ci/fmt ci/lint
 
-  check_static:
+  check_amam:
     runs-on: ubuntu-latest
 
     steps:
@@ -31,7 +31,7 @@ jobs:
           deno-version: v1.x
       - run: make -C static check
 
-  lint_static:
+  lint_amam:
     runs-on: ubuntu-latest
 
     steps:
