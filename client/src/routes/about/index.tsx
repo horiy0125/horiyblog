@@ -1,7 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
 import { CareerSection } from "~/components/about/career";
-import { HistorySection } from "~/components/about/history";
 import { ProfileSection } from "~/components/about/profile";
 import { pageRoutes } from "~/config/pageRoutes";
 
@@ -24,8 +23,6 @@ export default component$(() => {
       <ProfileSection />
       <hr />
       <CareerSection />
-      <hr />
-      <HistorySection />
     </div>
   );
 });
