@@ -1,8 +1,8 @@
 import { Application } from "./deps.ts";
-import healthCheck from "./routes/healthCheck.ts";
+import webhook from "./routes/webhook.ts";
 
 const app = new Application();
 
-app.use(healthCheck.routes());
+app.use(webhook.routes());
 
 await app.listen({ port: 8080 });
