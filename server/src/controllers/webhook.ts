@@ -1,5 +1,5 @@
 import { envVariables } from "../config/envVariables.ts";
-import { RouterContext } from "../deps.ts";
+import { RouterContext, Status } from "../deps.ts";
 
 export const WebhookController = () => {
   const callback = async (ctx: RouterContext<"/callback">) => {
@@ -13,6 +13,8 @@ export const WebhookController = () => {
         { type: "text", text: message },
       ],
     };
+
+    ctx.response.status = Status.OK;
 
     return await fetch(path, {
       method: "POST",
