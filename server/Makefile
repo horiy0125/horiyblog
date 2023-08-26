@@ -1,6 +1,6 @@
 .PHONY: run
 run:
-	deno run --allow-read --allow-env --allow-net src/app.js
+	deno run --allow-net src/app.ts
 
 .PHONY: lint
 lint:
