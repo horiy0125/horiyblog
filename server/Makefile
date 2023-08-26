@@ -12,4 +12,4 @@ fmt:
 
 .PHONY: check
 check:
-	deno check src/app.ts
+	deno check src/app.js

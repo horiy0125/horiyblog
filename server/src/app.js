@@ -242,7 +242,7 @@ bot.on("leave", function (event) {
 });
 
 bot.on("memberJoined", async function (event) {
-  let result = await event.joined.profiles();
+  const result = await event.joined.profiles();
 
   if (event.source.type === "group") {
     await event.reply("memberJoined: Welcome to the group.");
@@ -254,7 +254,7 @@ bot.on("memberJoined", async function (event) {
 });
 
 bot.on("memberLeft", async function (event) {
-  let result = await event.left.profiles();
+  const result = await event.left.profiles();
 
   if (event.source.type === "group") {
     console.log("memberLeft: Left the group, goodbye.");
