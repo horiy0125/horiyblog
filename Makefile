@@ -1,3 +1,7 @@
+.PHONY: init
+init:
+	make -C client init
+
 .PHONY: fmt
 fmt:
 	make -C client fmt
